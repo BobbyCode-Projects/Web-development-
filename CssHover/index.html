@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: blueviolet;
+            height: 100px;
+            width: 100px;
+            font-weight: 100px;
+            text-align: center;
+            color: white;
+            margin: auto;
+
+            transition: 4s;
+        }
+        /* HOVER - WHEN WE MOVE OUR MOUSE AND IT CHANGES THE STYLE */
+        #magic:hover{
+            transform: scale(1,2);
+            /* scale() it is used to change the size of the tag*/
+            background-color: red;
+
+           /*transform: rotate(360deg);*/
+
+            transform: rotateX('360deg');
+
+            /*transform: rotateY('360deg');*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box" id="magic">
+
+    </div>    
+</body>
+</html>
