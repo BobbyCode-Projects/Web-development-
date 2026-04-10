@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: bisque;
+            font-family: cursive;
+            display: flex;
+            justify-content: center;
+        }
+
+        .product{
+            background-color: white;
+            border: 1px solid black;
+            margin: 30px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px black;
+
+
+
+        }
+
+        .product img{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+
+        }
+
+        .product button{
+            background-color: burlywood;
+            border: none;
+            padding: 15px;
+            border-radius: 12px;
+            cursor: pointer;
+            
+        }
+
+        button:hover{
+            background-color: darkgoldenrod;
+            transform: scale(1.03);
+            transition: 2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="product">
+        <img src="https://images.pexels.com/photos/11507982/pexels-photo-11507982.jpeg" height="100" width="100">
+        <h2>Samsung</h2>
+        <p>$100</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="https://images.pexels.com/photos/19166246/pexels-photo-19166246.jpeg" height="100" width="100">
+        <h2>Shoes</h2>
+        <p>$20</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="https://images.pexels.com/photos/5240147/pexels-photo-5240147.jpeg" height="100" width="100">
+        <h2>Macbook</h2>
+        <p>$600</p>
+        <button>Add to Cart</button>
+    </div>
+</body>
+</html>
