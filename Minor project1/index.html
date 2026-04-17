@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Expense Tracker</title>
+    <style>
+         
+        body {
+    font-family:"Montserrat";
+    background-color:#0B0F19;
+    color:#FFFFFF;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+    line-height: 1.5;
+}
+
+   .summary-cards {
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;         
+    gap: 10px; 
+}
+
+   .card {
+    flex: 1;
+    background-color:#151A2C;
+    border: 1px solid #262D47;
+    border-radius: radius;
+    padding: 22px 20px;
+    box-shadow:shadow;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+    
+    .card-label {
+    color:#94A3B8;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+
+    .card-value {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+    .summary-card:hover {
+    transform: translateY(-5px);
+}
+
+    .dashboard-container {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+}
+
+    .header {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+}
+
+    .main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+    .content-section {
+    flex: 1;
+    min-width: 350px;
+    background-color: #151A2C;
+    border: 1px solid #262D47;
+    border-radius: 24px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+    .content-section:hover {
+    transform: translateY(-5px);
+}
+
+
+    .transaction-title {
+    font-weight: 500;
+    font-size: 1.1rem;
+    color:#FFFFFF;
+}
+
+    .transaction-date {
+    font-size: 0.9rem;
+    color:#94A3B8;
+}
+
+    .transaction-amount.negative {
+    color:#EF4444;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="dashboard container">
+        <h1  class="app-title">MY EXPENSE TRACKER</h1>
+        <p class="app-subtitle">Track your monthly spending</p>
+        
+    </div>
+    </header>
+    <section class="summary-cards">
+         <div class="card summary-card gradient-1">
+        <p class="card-label">Total Spent</p>
+        <h3 class="card-value">$2,450.00</h3>
+        </div>
+    <div class="card summary-card gradient-2">
+        <p class="card-label">Highest Category</p>
+        <h3 class="card-value">Food</h3>
+    </div>
+    <div class="card summary-card gradient-3">
+        <P class="card-label">Current Month</p>
+        <h3 class="card-value">April</h3>
+    </div>
+    </section>
+
+    <div class="main-content">
+            <!-- 3. Expense Categories Section -->
+            <section class="content-section categories-section">
+                <div>
+                <h2 class="section-title">Expense Categories</h2>
+                <h3 class="category-name">Food & Dining</h3>
+                <p class="category-amount">$840.00</p>
+                <h3 class="category-name">Transport</h3>
+                <p class="category-amount">$320.00</p>
+                <h3 class="category-name">Shopping</h3>
+                <p class="category-amount">$560.00</p>
+                <h3 class="category-name">Entertainment</h3>
+                <p class="category-amount">$210.00</p>
+                </div>
+            </div>
+            </section>
+
+            <!-- 4. Recent Transactions Section -->
+             <section class="content-section transactions-section">
+                <div>
+                        <h3 class="section-title">Recent Transactions</h3>
+                        <h4 class="transaction-title">Grocery Store</h4>
+                        <p class="transaction-date">April 16, 2026</p>
+                        <p class="transaction-amount negative">-$120.40</p>
+                        <h4 class="transaction-title">Restaurant</h4>
+                        <p class="transaction-date">April 15, 2026</p>
+                        <p class="transaction-amount negative">-$65.00</p>
+                        <h4 class="transaction-title">Clothing Brand</h4>
+                        <p class="transaction-date">April 14, 2026</p>
+                        <p class="transaction-amount negative">-$210.00</p>
+                        <h4 class="transaction-title">Movie Tickets</h4>
+                        <p class="transaction-date">April 12, 2026</p>
+                        <p class="transaction-amount negative">-$35.00</p>
+                    </div>
+            </section>
+</body>
+</html>
